@@ -9,26 +9,6 @@ num_classes = 10
 batch_size = 256
 epochs = 64
 
-"""
-#training dataset
-
-X = pickle.load(open("X.pickle","rb"))
-y = pickle.load(open("y.pickle","rb"))
-
-#test dataset
-
-X_test = pickle.load(open("X_test.pickle","rb"))
-y_test = pickle.load(open("y_test.pickle","rb"))
-
-#normalization of the dataste test and train
-
-X = X/255.0
-y = keras.utils.to_categorical(y, 10)
-
-X_test = X_test/255.0
-y_test = keras.utils.to_categorical(y_test, 10)
-"""
-
 mnist = tf.keras.datasets.mnist
 
 # unpacks images to x_train/x_test and labels to y_train/y_test
